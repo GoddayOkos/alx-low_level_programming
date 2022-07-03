@@ -13,7 +13,7 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("Size of a char: %d byte(s)\nSize of an int: %d byte(s)\nSize of a long int: %d byte(s)\nSize of a long long int: %d byte(s)\nSize of a float: %d byte(s)\n", sizeOf(a), sizeOf(b), sizeOf(c), sizeOf(d), sizeOf(e));
+	printf("Size of a char: %d byte(s)\nSize of an int: %d byte(s)\nSize of a long int: %d byte(s)\nSize of a long long int: %d byte(s)\nSize of a float: %d byte(s)\n", sizeof(a), sizeof(b), sizeof(c), sizeof(d), sizeof(e));
 	return (0);
 
 }
