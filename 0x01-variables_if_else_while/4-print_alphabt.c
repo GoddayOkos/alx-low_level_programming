@@ -17,8 +17,8 @@ int main(void)
 			continue;
 		else
 			putchar(i);
-		putchar('\n');
 	}
+	putchar('\n');
 
 	return (0);
 }
