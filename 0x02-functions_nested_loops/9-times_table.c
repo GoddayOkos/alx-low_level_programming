@@ -14,13 +14,21 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			_putchar((i * j) + '0');
+			int x = (i * j) / 10;
+			int y = (i * j) % 10;
+
+			if ((i * j) > 9)
+				_putchar(x + '0');
+
+			_putchar(y + '0');
+
 			if (j != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
+
 		_putchar('\n');
 	}
 }
