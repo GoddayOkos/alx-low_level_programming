@@ -23,7 +23,7 @@ void print_to_98(int n)
 			if (i != STOP)
 				printf("%d, ", i);
 			else
-				printf("%d,", i)
+				printf("%d,", i);
 		}
 	}
 	else if (n > STOP)
