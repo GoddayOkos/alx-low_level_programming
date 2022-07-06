@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * _islower - check whether the input value @c is
+ * _islower - check whether the input value c is
  * lowercase or uppercase.
  *
- * Return: 1 if @c is lower else 0.
+ * @c: parameter under test.
+ *
+ * Return: 1 if c is lower else 0.
  */
 
 int _islower(int c)
