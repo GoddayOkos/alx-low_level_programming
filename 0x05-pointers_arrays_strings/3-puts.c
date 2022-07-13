@@ -3,16 +3,16 @@
 /**
  * _puts - Prints the given string to std output.
  *
- * @s: string to be printed.
+ * @str: string to be printed.
  *
  * Return: Nothing.
  */
 
-void _puts(char *s)
+void _puts(char *str)
 {
 	int i;
 
 	for (i = 0; i != '\0'; i++)
-		_putchar(s[i]);
+		_putchar(str[i]);
 	_putchar('\n');
 }
