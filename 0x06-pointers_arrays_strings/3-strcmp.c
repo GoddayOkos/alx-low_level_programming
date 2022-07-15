@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcomp - Copmares two strings
+ * _strcmp - Copmares two strings
  *
  * @s1: The first string
  * @s2: The second string
@@ -9,7 +9,7 @@
  * Return: int indicating the status.
  */
 
-int _strcomp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int j;
 
