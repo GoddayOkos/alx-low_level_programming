@@ -1,8 +1,8 @@
 #include "main.h"
 
-#define LOWER_START 97
-#define LOWER_END 122
-#define LOWER_UPPER_DIFF 32
+#define LOWER 97
+#define UPPER 122
+#define STEP 32
 
 /**
  * string_toupper - Convert lowercase char to uppercase
@@ -18,8 +18,8 @@ char *string_toupper(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] >= LOWER_START && str <= LOWER_END)
-			str[i] -= LOWER_UPPER_DIFF;
+		if (str[i] >= LOWER && str[i] <= UPPER)
+			str[i] -= STEP;
 	}
 
 	return (str);
