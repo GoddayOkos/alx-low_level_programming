@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_diagsum - A program that prints the sum of two diagonals of a square
+ * print_diagsums - A program that prints the sum of two diagonals of a square
  * matrix of integer.
  *
  * @a: square matrix of integer.
@@ -11,7 +11,7 @@
  * Return: Nothing
  */
 
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i, max = size * size, sum1 = 0, sum2 = 0;
 
