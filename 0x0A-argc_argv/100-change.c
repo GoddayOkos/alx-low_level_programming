@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void check25(int *amount, int *coins);
+
 /**
  * main - A proogram that prints the minimum number of coins to make for amount
  * @argc: The arguements' counter
