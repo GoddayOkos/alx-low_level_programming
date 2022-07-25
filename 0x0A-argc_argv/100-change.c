@@ -21,11 +21,7 @@ int main(int argc, char *argv[])
 			printf("%d\n", 0);
 			return (0);
 		}
-		if (amount % 25 >= 0)
-		{
-			coins += amount / 25;
-			amount %= 25;
-		}
+		check25(&amount, &coins);
 		if (amount % 10 >= 0)
 		{
 			coins += amount / 10;
@@ -50,5 +46,21 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
+	}
+}
+
+/**
+ * check25 - Check if amount is divisible by 25
+ * @amount: Integer
+ * @coins: Integer
+ * Return: Nothing.
+ */
+
+void check25(int *amount, int *coins)
+{
+	if (*amount % 25 >= 0)
+	{
+		*coins += *amount / 25;
+		*amount %= 25;
 	}
 }
