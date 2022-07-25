@@ -21,29 +21,28 @@ int main(int argc, char *argv[])
 			printf("%d\n", 0);
 			return (0);
 		}
-		if (amount % 1 >= 0)
-			coins += amount;
-		if (amount % 2 >= 0)
+		if (amount % 25 >= 0)
 		{
-			coins += amount / 2;
-			amount %= 2;
-		}
-		if (amount % 5 >= 0)
-		{
-			coins += amount / 5;
-			amount %= 5;
+			coins += amount / 25;
+			amount %= 25;
 		}
 		if (amount % 10 >= 0)
 		{
 			coins += amount / 10;
 			amount %= 10;
 		}
-		if (amount % 25 >= 0)
+		if (amount % 5 >= 0)
 		{
-			coins += amount / 25;
-			amount %= 25;
+			coins += amount / 5;
+			amount %= 5;
 		}
-
+		if (amount % 2 >= 0)
+		{
+			coins += amount / 2;
+			amount %= 2;
+		}
+		if (amount % 1 >= 0)
+			coins += amount;
 		printf("%d\n", coins);
 		return (0);
 	}
