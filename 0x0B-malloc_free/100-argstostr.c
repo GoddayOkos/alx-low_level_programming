@@ -11,7 +11,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *new_str;
-	unsigned int i, j, len, new_str_len;
+	unsigned int i, j, new_str_len;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -19,10 +19,10 @@ char *argstostr(int ac, char **av)
 	for (i = 0; av[i]; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-			len++;
+			;
 	}
 
-	new_str = (char *) malloc(len * sizeof(char) + ac + 1);
+	new_str = (char *) malloc((i * j) * sizeof(char) + ac + 1);
 
 	if (new_str == NULL)
 		return (NULL);
