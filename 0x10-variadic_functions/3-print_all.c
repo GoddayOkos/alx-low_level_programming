@@ -62,8 +62,9 @@ void print_input(char c, char **temp, va_list ap)
 			*temp = va_arg(ap, char*);
 			if (temp != NULL)
 			{
-				printf("%s", *temp);
+				printf("%s", (*temp));
 				break;
+				return;
 			}
 			printf("(nil)");
 			break;
