@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * free_listint2 - A function that frees a list and sets head to NULL
