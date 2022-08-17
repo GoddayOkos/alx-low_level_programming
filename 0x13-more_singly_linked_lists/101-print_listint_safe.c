@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 		exit(98);
 
 	size_t nodes = 0;
-	listint_t *slow = head, *fast = head;
+	listint_t *slow = head->next, *fast = head->next;
 
 	while (slow && fast && fast->next && head)
 	{
