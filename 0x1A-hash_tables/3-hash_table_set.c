@@ -1,6 +1,4 @@
 #include "hash_tables.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
  * hash_table_set - A function that sets a key value pair in the hash table.
@@ -28,7 +26,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = key_dup;
 	new_node->value = value_dup;
 	new_node->next = NULL;
-	index = key_index(key, ht->size);
+	index = key_index((unsigned char *)key, ht->size);
 	if ((ht->array)[index] != NULL) /* COLLISION DETECTED */
 	{
 		tmp_node = (ht->array)[index];
